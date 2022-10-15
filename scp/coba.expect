@@ -1,0 +1,17 @@
+#!/usr/bin/expect -f
+
+set date "August-14-2022"
+
+# connect via scp
+spawn scp flylxy:/home/flylxy/Document/shellscript/mysql/log/msql_$date.log /home/haris/Documents/belajar-shell-script/shell_haris
+#######################
+expect {
+  -re ".*es.*o.*" {
+    exp_send "yes\r"
+    exp_continue
+  }
+  -re ".*sword.*" {
+    exp_send "1234567890\r"
+  }
+}
+interact
