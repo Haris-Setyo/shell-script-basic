@@ -1,0 +1,30 @@
+#!/usr/bin/expect -f
+set ip [lindex $argv 0]
+set user [lindex $argv 1]
+
+set timeout 20
+    spawn ssh -q -p 22 $user@$ip
+
+expect {
+	timeout { send_user "Server Offline\n"; exit 1 }
+   #eof { send_user "\nSSH failure for $hostname\n"; exit 1 }
+	"yes/no" {
+		  send "yes\r"
+		  expect "assword:" {send "1234567890\r"}
+		  }
+	 "assword:" {send "1234567890\r"}
+  }
+  expect "@" {send "su root\r"}
+  expect "assword:" 
+  	send "1234567890\r"
+
+#service cek##############
+
+expect "#" { send "service --status-all\r"}
+
+#exit########
+expect "#" {send "exit\r"}
+expect "@" {send "exit\r"}
+
+#interact
+expect eof

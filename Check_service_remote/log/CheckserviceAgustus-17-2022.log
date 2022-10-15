@@ -1,0 +1,42 @@
+===============================================
+=== Total Service at 192.168.100.29 : 29 ====
+===============================================
+number of service status is running 16 
+===============================================
+[?2004l [ + ]  apparmor
+ [ + ]  apport
+ [ + ]  cron
+ [ + ]  dbus
+ [ + ]  irqbalance
+ [ + ]  kmod
+ [ + ]  lm-sensors
+ [ + ]  multipath-tools
+ [ + ]  open-vm-tools
+ [ + ]  plymouth
+ [ + ]  plymouth-log
+ [ + ]  procps
+ [ + ]  ssh
+ [ + ]  udev
+ [ + ]  ufw
+ [ + ]  unattended-upgrades
+===============================================
+number of service status not running 13 
+===============================================
+ [ - ]  console-setup.sh
+ [ - ]  cryptdisks
+ [ - ]  cryptdisks-early
+ [ - ]  grub-common
+ [ - ]  hwclock.sh
+ [ - ]  iscsid
+ [ - ]  keyboard-setup.sh
+ [ - ]  lvm2
+ [ - ]  lvm2-lvmpolld
+ [ - ]  open-iscsi
+ [ - ]  rsync
+ [ - ]  screen-cleanup
+ [ - ]  uuidd
+===============================================
+number of service state cannot be determined 0 
+===============================================
+
+===============================================
