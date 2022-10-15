@@ -1,0 +1,23 @@
+host1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 3400,
+                "used": 3883
+            },
+            "real": {
+                "free": 2182,
+                "total": 7283,
+                "used": 5101
+            },
+            "swap": {
+                "cached": 2,
+                "free": 7301,
+                "total": 7627,
+                "used": 326
+            }
+        },
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false
+}

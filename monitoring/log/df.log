@@ -1,0 +1,9 @@
+host1 | CHANGED | rc=0 >>
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           729M  3,8M  725M   1% /run
+/dev/nvme0n1p4  274G   18G  242G   7% /
+tmpfs           3,6G  121M  3,5G   4% /dev/shm
+tmpfs           5,0M  4,0K  5,0M   1% /run/lock
+/dev/nvme0n1p3  762M  5,3M  757M   1% /boot/efi
+/dev/nvme0n1p2  187G   56G  121G  32% /home
+tmpfs           729M  144K  729M   1% /run/user/1000

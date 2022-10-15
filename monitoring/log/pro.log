@@ -1,0 +1,7 @@
+host1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_product_name": "HP 245 G8 Notebook PC",
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false
+}

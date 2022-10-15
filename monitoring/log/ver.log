@@ -1,0 +1,7 @@
+host1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_distribution_version": "22.04",
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false
+}
